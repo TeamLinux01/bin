@@ -3,6 +3,7 @@
 - [Create SSH keys for service](#create-ssh-keys-for-service)
   - [Purpose](#purpose)
   - [Usage](#usage)
+  - [Backup Files](#backup-files)
 
 ## Purpose
 
@@ -20,3 +21,13 @@ In a terminal, run `/create_ssh_key_for_service.sh *server-hostname* *username*`
   - IdentityFile ~/.ssh/*ssh-private-key*
 
 Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the remote.
+
+> 🚧 Warning
+>
+> I highly recommend setting passphrases for all keys created, in case the keys are stolen.
+
+## Backup Files
+
+Files are stored in `~/.ssh`, these files should be archived and copied to a secure location as a backup.
+
+Permission settings for the `.ssh` folder should be `700`, the `*.pub` files should be `644` and the private keys and other files should be `600`.
