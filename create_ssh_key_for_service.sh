@@ -1,5 +1,5 @@
 #!/bin/bash
-#creates a new ssl key, then adds it to the ssh agent
+#creates a new SSH keypair, then adds the configuration to the ssh agent
 #argument 1 ($1) server-hostname, argument 2 ($2) username
 
 if [[ $# -ne 2 ]] ; then #display an error if both arguments are not entered

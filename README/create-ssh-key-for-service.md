@@ -1,12 +1,12 @@
-# Create SSH key for service
+# Create SSH keys for service
 
-- [Create SSH key for service](#create-ssh-key-for-service)
+- [Create SSH keys for service](#create-ssh-keys-for-service)
   - [Purpose](#purpose)
   - [Usage](#usage)
 
 ## Purpose
 
-This script creates a new Ed21559 key file for ssh service.
+This script creates a new Ed21559 SSH public and private keypair for ssh service.
 
 ## Usage
 
