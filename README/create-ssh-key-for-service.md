@@ -10,7 +10,7 @@ This script creates a new Ed21559 SSH public and private key-pair for ssh servic
 
 ## Usage
 
-./create_ssh_key_for_service.sh *server-hostname* *username*
+In a terminal, run `/create_ssh_key_for_service.sh *server-hostname* *username*`.
 
 - The script will create the ssh key-pair in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
 

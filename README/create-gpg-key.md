@@ -10,4 +10,4 @@ This script creates new Ed21559 GPG public and private key-pair. It will ask for
 
 ## Usage
 
-./create_gpg_key.sh
+In a terminal, run `create_gpg_key.sh`.
