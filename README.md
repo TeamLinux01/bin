@@ -1,8 +1,8 @@
 # A collection of bash scripts for ~/bin/
 
 - [A collection of bash scripts](#a-collection-of-bash-scripts)
-  - [Create SSH key for service](#create-ssh-key-for-service)
-  - [Create GPG keys]
+  - [Create SSH key for service](#create-ssh-keys-for-service)
+  - [Create GPG keys](#create-gpg-keys)
   - [Docker images updater](#docker-images-updater)
 
 ## [Create SSH keys for service](README/create-ssh-key-for-service.md)

@@ -6,15 +6,17 @@
 
 ## Purpose
 
-This script creates a new Ed21559 SSH public and private keypair for ssh service.
+This script creates a new Ed21559 SSH public and private key-pair for ssh service.
 
 ## Usage
 
 ./create_ssh_key_for_service.sh *server-hostname* *username*
 
-- The script will create the ssh key in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
+- The script will create the ssh key-pair in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
 
   - Host *server-hostname*
   - HostName *server-hostname*
   - User *username*
-  - IdentityFile ~/.ssh/*ssh-key*
+  - IdentityFile ~/.ssh/*ssh-private-key*
+
+Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the remote.
