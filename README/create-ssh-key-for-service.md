@@ -6,7 +6,7 @@
 
 ## Purpose
 
-This script creates a new rsa 4096bit key file for ssh service.
+This script creates a new Ed21559 key file for ssh service.
 
 ## Usage
 
