@@ -12,9 +12,9 @@ This script creates a new Ed21559 key file for ssh service.
 
 ./create_ssh_key_for_service.sh *server-hostname* *username*
 
-- The script will create the ssl-key in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
+- The script will create the ssh key in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
 
   - Host *server-hostname*
   - HostName *server-hostname*
   - User *username*
-  - IdentityFile ~/.ssh/*ssl-key*
+  - IdentityFile ~/.ssh/*ssh-key*
