@@ -11,6 +11,10 @@ This script creates a new Ed21559 SSH public and private key-pair for ssh servic
 
 ## Usage
 
+> 🚧 Warning
+>
+> I highly recommend setting passphrases for all keys created, in case the keys are stolen.
+
 In a terminal, run `/create_ssh_key_for_service.sh *server-hostname* *username*`.
 
 - The script will create the ssh key-pair in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
@@ -21,10 +25,6 @@ In a terminal, run `/create_ssh_key_for_service.sh *server-hostname* *username*`
   - IdentityFile ~/.ssh/*ssh-private-key*
 
 Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the remote.
-
-> 🚧 Warning
->
-> I highly recommend setting passphrases for all keys created, in case the keys are stolen.
 
 ## Backup Files
 

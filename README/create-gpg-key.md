@@ -11,11 +11,11 @@ This script creates new Ed21559 GPG public and private key-pair. It will ask for
 
 ## Usage
 
-In a terminal, run `create_gpg_key.sh`.
-
 > 🚧 Warning
 >
 > I highly recommend setting passphrases for all keys created, in case the keys are stolen.
+
+In a terminal, run `create_gpg_key.sh`.
 
 ## Backup Files
 
