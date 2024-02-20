@@ -66,7 +66,7 @@ Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the 
 
 1. Go to https://github.com/settings/keys and click `New SSH key`.
 
-1. Give the key a title (Optional), select Key type: `Authentication key` (default) and copy the text from `git@github.com.pub` into the Key textbox.
+1. Give the key a title (Optional), select Key type: `Authentication key` (Default) and copy the text from `git@github.com.pub` into the Key textbox.
 
 1. Click `Add SSH key` button to complete.
 
