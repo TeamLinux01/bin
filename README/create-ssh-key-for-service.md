@@ -56,6 +56,20 @@ Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the 
 
 1. Unblock port 22 (TCP) `ssh` in your firewall on the server to be able to now access the device using the public key.
 
+### Generate keys for github.
+
+1. Generate the keys for the github service.
+
+    ```bash
+    create_ssh_key_for_service.sh github.com git
+    ```
+
+1. Go to https://github.com/settings/keys and click `New SSH key`.
+
+1. Give the key a title (Optional), select Key type: `Authentication key` (default) and copy the text from `git@github.com.pub` into the Key textbox.
+
+1. Click `Add SSH key` button to complete.
+
 ## Backup Files
 
 Files are stored in `~/.ssh`, these files should be archived and copied to a secure location as a backup.
