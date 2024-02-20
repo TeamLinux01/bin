@@ -28,7 +28,7 @@ Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the 
 
 ### Enable ssh public key logins on the server
 
-1. Uncomment lines in `/etc/ssh/sshd_config` on the server. Lines `# PubkeyAuthentication yes` and `# PubkeyAuthentication yes`.
+1. Uncomment lines in `/etc/ssh/sshd_config` on the server. Lines `# PubkeyAuthentication yes` and `# PasswordAuthentication no`.
 
     ```bash
     sudo nano /etc/ssh/sshd_config
