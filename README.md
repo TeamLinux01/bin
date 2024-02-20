@@ -16,7 +16,7 @@ git clone https://github.com/TeamLinux01/bin.git ~/bin
 
 ### FISH shell setup
 
-Run in the terminal
+After running the above command, run in this in the terminal
 
 ```fish
 set -U fish_user_paths ~/bin $fish_user_paths
