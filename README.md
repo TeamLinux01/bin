@@ -19,5 +19,7 @@ git clone https://github.com/TeamLinux01/bin.git ~/bin
 Run in the terminal
 
 ```fish
-fish_add_path ~/bin/
+set -U fish_user_paths ~/bin $fish_user_paths
 ```
+
+Close the terminal and it will be set on next session.
