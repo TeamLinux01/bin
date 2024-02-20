@@ -10,6 +10,10 @@ This script pulls all docker images installed on a machine.
 
 ## Usage
 
-In a terminal, run `docker-images-updater.sh`.
+In a terminal, run
+
+```bash
+docker-images-updater.sh
+```
 
 Remember to stop, rm and re-create containers that have a new imaged pulled.
