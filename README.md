@@ -8,4 +8,16 @@
 
 ## Setup instructions
 
-Run `git clone https://github.com/TeamLinux01/bin.git ~/bin` on the command line.
+Run in the terminal
+
+```bash
+git clone https://github.com/TeamLinux01/bin.git ~/bin
+```
+
+### FISH shell setup
+
+Run in the terminal
+
+```fish
+fish_add_path ~/bin/
+```
