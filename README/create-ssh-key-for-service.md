@@ -34,6 +34,8 @@ Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the 
     sudo nano /etc/ssh/sshd_config
     ```
 
+    The file should look like this after editing.
+
     ```
     ...
     # Authentication:
@@ -52,7 +54,7 @@ Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the 
     sudo systemctl enable sshd.service && sudo systemctl start sshd.service
     ```
 
-1. Unblock port 22 `ssh` in your firewall on the server to be able to now access the device using the public key.
+1. Unblock port 22 (TCP) `ssh` in your firewall on the server to be able to now access the device using the public key.
 
 ## Backup Files
 
