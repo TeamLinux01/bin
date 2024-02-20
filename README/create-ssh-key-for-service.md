@@ -26,6 +26,34 @@ In a terminal, run `/create_ssh_key_for_service.sh *server-hostname* *username*`
 
 Copy the ssh public key to the remote device in `~/.ssh/authorized_keys` on the remote.
 
+### Enable ssh public key logins on the server
+
+1. Uncomment these lines in `/etc/ssh/sshd_config` on the server.
+
+    ```bash
+    sudo nano /etc/ssh/sshd_config
+    ```
+
+    ```
+    ...
+    # Authentication:
+    ...
+    PubkeyAuthentication yes
+    ...
+    PasswordAuthentication no
+    ...
+    ```
+
+1. Copy the public key into `./ssh/authorized_keys` file on the server. Without having sshd already setup, it will have to be manually copied by another way.
+
+1. Enable and start the ssh daemon service on the server.
+
+    ```bash
+    sudo systemctl enable sshd.service && sudo systemctl start sshd.service
+    ```
+
+1. Unblock port 22 `ssh` in your firewall on the server to be able to now access the device using the public key.
+
 ## Backup Files
 
 Files are stored in `~/.ssh`, these files should be archived and copied to a secure location as a backup.
