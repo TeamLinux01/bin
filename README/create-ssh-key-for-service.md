@@ -22,7 +22,7 @@ In a terminal, run
 > Replace server-hostname with the server's DNS or IP address and replace username with the user name you want to connect to on the server.
 
 ```bash
-/create_ssh_key_for_service.sh server-hostname username
+create_ssh_key_for_service.sh server-hostname username
 ```
 
 - The script will create the ssh key-pair in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
