@@ -10,11 +10,15 @@
 
 Recommend forking the project repo first.
 
-Git clone the repo to the user's home bin directory.
-
 > [!NOTE]
 >
-> Use the green `Code` button on the repo page to get the http or ssh link to paste after the `git clone` command.
+> Use the green `Code` button on the repo page to get the http or ssh link to paste after the `git clone` command. Replace `[git repo]` with the text copied from the code button.
+
+Run the following command to get started:
+
+```bash
+git clone [git repo] ~/bin
+```
 
 ### FISH shell setup
 
